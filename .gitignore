@@ -1,0 +1,5 @@
+.env
+.keys
+demo-vault
+demo-load
+*.log
