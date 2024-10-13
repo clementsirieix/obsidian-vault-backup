@@ -65,7 +65,7 @@ To set up this backup system for your Obsidian vault, follow these steps:
 To create a backup of your Obsidian vault:
 
 ```sh
-main.sh save -p ~/path/to/your/vault
+vault-backup save -p ~/path/to/your/vault
 ```
 
 This will create an encrypted backup in the `backups` directory and commit it to your Git repository.
@@ -75,7 +75,7 @@ This will create an encrypted backup in the `backups` directory and commit it to
 To restore a backup:
 
 ```sh
-main.sh load -n backup-name -o ~/path/to/output/directory
+vault-backup load -n backup-name -o ~/path/to/output/directory
 ```
 
 Replace `backup-name` with the name of the backup you want to restore, and specify the output directory where you want to extract the backup.
@@ -85,7 +85,7 @@ Replace `backup-name` with the name of the backup you want to restore, and speci
 To see a list of available backups:
 
 ```sh
-main.sh list
+vault-backup list
 ```
 
 ### Automate backups
@@ -93,13 +93,13 @@ main.sh list
 To set up automatic daily backups:
 
 ```sh
-main.sh automate start
+vault-backup automate start
 ```
 
 To stop automatic backups:
 
 ```sh
-main.sh automate stop
+vault-backup automate stop
 ```
 
 ## Notes
